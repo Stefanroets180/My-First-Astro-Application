@@ -35,4 +35,13 @@
     .sun {
         fill: transparent;
     }
+    /** If a parent element has a .dark class, target the .sun icon and make it black (shows the icon) */
+    :global(.dark) .sun {
+        fill: black;
+    }
+
+    /** If a parent element has a .dark class, target the .moon icon and make it transparent (hides the icon) */
+    :global(.dark) .moon {
+        fill: transparent;
+    }
 </style>
