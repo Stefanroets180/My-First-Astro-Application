@@ -1,9 +1,9 @@
 ---
-layout: ../layouts/Main.astro
+layout: ../layouts/Blog.astro
 ---
 
 - 5X **Marathoner**
 - Olympic gold medalist
 - Fashion _model_
-- Michellin star restaurant owner
+- Michelin star restaurant owner
 - Adviser to the vice president
