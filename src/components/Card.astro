@@ -57,3 +57,11 @@ const {to, title, gradientFrom, gradientTo } = Astro.props;
 
     }
 </style>
+
+<script>
+    const card = document.querySelector(".card");
+
+    if (card instanceof HTMLElement) {
+        console.log(card.dataset.gradientformat);
+    }
+</script>
