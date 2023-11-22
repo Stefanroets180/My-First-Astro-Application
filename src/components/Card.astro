@@ -1,16 +1,12 @@
 ---
-export class Props{
-    }
-const {to, title } = Astro.props;
-
-type Props = {
+export type Props= {
     to: string;
     title: string;
     gradientFrom: string;
     gradientTo: string;
 };
 
-
+const {to, title, gradientFrom, gradientTo } = Astro.props;
 ---
 
 <a href={to} class="card">
@@ -20,10 +16,14 @@ type Props = {
     </div>
 </a>
 
-<style>
+<style define:vars={{ gradientFrom, gradientTo }}>
     .card {
         --radius: 10px;
-
+        background-image: linear-gradient(
+                to right,
+                var(--gradientFrom),
+                var(--gradientTo)
+        );
         padding: 4px;
         border-radius: var(--radius);
         text-decoration: none;
@@ -47,5 +47,13 @@ type Props = {
         padding-top: 2rem;
         font-size: 1.2rem;
         color: var(--grey-900);
+    }
+
+    .card__title {
+        font-size: 1.2rem;
+        color: var(--grey-900);
+        font-weight: 500;
+        line-height: 1.75rem;
+
     }
 </style>
