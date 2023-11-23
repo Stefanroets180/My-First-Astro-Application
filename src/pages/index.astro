@@ -1,7 +1,7 @@
 ---
 import Main from "../layouts/Main.astro";
 import Cards from "../components/Cards.astro";
-const profilePicture = "http://i.imgur.com/JPGFE75.jpg";
+const profilePicture = "https://i.imgur.com/JPGFE75.jpg";
 ---
 
 <Main title="Fra Katerina">
@@ -50,25 +50,25 @@ const profilePicture = "http://i.imgur.com/JPGFE75.jpg";
 	<div class="featured-blogs">
 		<h3 class="featured-blogs__title">Featured Blogs</h3>
 		<p class="featured-blogs__description">
-			Opinion pieces that will change eveything you know about web development.
+			Opinion pieces that will change everything you know about web development.
 		</p>
 	</div>
 
 	<ol class="blogs">
 		<li class="blogs__list">
-			<a href="blog/typescript-is-the-new-javascript"
+			<a href="blogs/typescript-is-the-new-javascript"
 			>Typescript is the new Javascript</a
 			>
 		</li>
 
 		<li class="blogs__list">
-			<a href="blog/rust-javascript-tooling"
+			<a href="blogs/rust-javascript-tooling"
 			>Why Rust is the future of Javascript tooling</a
 			>
 		</li>
 
 		<li class="blogs__list">
-			<a href="blog/sleep-more">Why you should sleep more</a>
+			<a href="blogs/sleep-more">Why you should sleep more</a>
 		</li>
 	</ol>
 
@@ -103,7 +103,7 @@ const profilePicture = "http://i.imgur.com/JPGFE75.jpg";
 
 	.featured-blogs__title {
 		font-size: 2rem;
-		color: var(--gray-900);
+		color: var(--grey-900);
 	}
 
 	.featured-blogs__description {
@@ -117,7 +117,7 @@ const profilePicture = "http://i.imgur.com/JPGFE75.jpg";
 
 	.blogs__list {
 		border-bottom: 1px solid;
-		border-color: var(--gray-200);
+		border-color: var(--grey-200);
 	}
 
 	.blog__link {
@@ -125,7 +125,7 @@ const profilePicture = "http://i.imgur.com/JPGFE75.jpg";
 		height: 100%;
 		display: block;
 		padding: 1rem 0;
-		color: var(--gray-200);
+		color: var(--grey-200);
 		text-decoration: none;
 		transition: opacity 0.2s ease-in-out;
 	}
