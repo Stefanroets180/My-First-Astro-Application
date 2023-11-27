@@ -1,11 +1,10 @@
 ---
-import Main from "./Main.astro"
-import {MarkdownLayoutProps} from "astro";
+import Main from "./Main.astro";
 
-type Props =MarkdownLayoutProps<{
-    title: string;
-    subtitle: string;
-    poster: string;
+type Props = MarkdownLayoutProps<{
+    title: string | undefined;
+    subtitle: string | undefined;
+    poster: string | undefined;
 }>
 
 const {title, subtitle, poster } = Astro.props.frontmatter;
